@@ -64,15 +64,16 @@
             </div>
 
             <div class = "sidebar__bottom">
-                <p class = "sidebar__bottom__firstParagraph">Need more features?</p>
+                <div class = sidebar__bottom__wrapper>
+                    <p class = "sidebar__bottom__firstParagraph">Need more features?</p>
+                    <p class = "sidebar__bottom__secondParagraph">Check out our Pro solution.</p>
 
-                <p class = "sidebar__bottom__secondParagraph">Check out our Pro solution.</p>
-
-                <div class = "sidebar__bottomButton">
-                    <a  href = "#!">Buy Pro</a>
-                    <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.3333 13.8333H1.66667V2.16667H7.5V0.5H1.66667C0.741667 0.5 0 1.25 0 2.16667V13.8333C0 14.75 0.741667 15.5 1.66667 15.5H13.3333C14.25 15.5 15 14.75 15 13.8333V8H13.3333V13.8333ZM9.16667 0.5V2.16667H12.1583L3.96667 10.3583L5.14167 11.5333L13.3333 3.34167V6.33333H15V0.5H9.16667Z" fill="white"/>
-                    </svg>                        
+                    <div class = "sidebar__bottomButton">
+                        <a  href = "#!">Buy Pro</a>
+                        <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3333 13.8333H1.66667V2.16667H7.5V0.5H1.66667C0.741667 0.5 0 1.25 0 2.16667V13.8333C0 14.75 0.741667 15.5 1.66667 15.5H13.3333C14.25 15.5 15 14.75 15 13.8333V8H13.3333V13.8333ZM9.16667 0.5V2.16667H12.1583L3.96667 10.3583L5.14167 11.5333L13.3333 3.34167V6.33333H15V0.5H9.16667Z" fill="white"/>
+                        </svg>                        
+                    </div>
                 </div>
             </div>
         </div>
@@ -103,6 +104,7 @@
 
                 <div class = "searchBar">
                     <div class = "searchBar__form">
+                        <label>Search customer</label>
                         <span class = "search__icon"><img src = "./src/icons/search-button.svg"></span>
                         <input type = "search" placeholder = "">
                     </div>
@@ -114,34 +116,75 @@
                     </header>
                     <table>
                         <thead>
-                            <tr>
-                                <th>NAME</th>
-                                <th>EMAIL</th>
-                                <th>LOCATION</th>
-                                <th>PHONE</th>
-                                <th>REGISTRATION DATE</th>
+                            <tr class = "table__header">
+                                <th><div class = "header__container"><p>NAME</p></div></th>
+                                <th><div class = "header__container"><p>EMAIL</p></div></th>
+                                <th><div class = "header__container"><img src = "./src/icons/sort-icon.svg"><p>LOCATION</p></div></th>
+                                <th><div class = "header__container"><p>PHONE</p></div></th>
+                                <th><div class = "header__container">><p>REGISTRATION DATE</p></div</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>5</td>
+                            <tr class = "table__content">
+                                <td><div class = "cell__container"><img src = "./src/icons/Header-avatar.svg"><p>Ekaterina Tankova</p></div></td>
+                                <td><div class = "cell__container"><p>ekaterina.tankova@devias.io</p></div></td>
+                                <td><div class = "cell__container"><p>Parkersburg, West Virginia, USA</p></div></td>
+                                <td><div class = "cell__container"><p>304-428-3097</p></div></td>
+                                <td><div class = "cell__container"><p>12/04/2019</p></div></td>
+                            </tr>
+                            <tr class = "table__content">
+                                <td><div class = "cell__container"><img src = "./src/icons/Header-avatar.svg"><p>Ekaterina Tankova</p></div></td>
+                                <td><div class = "cell__container"><p>ekaterina.tankova@devias.io</p></div></td>
+                                <td><div class = "cell__container"><p>Parkersburg, West Virginia, USA</p></div></td>
+                                <td><div class = "cell__container"><p>304-428-3097</p></div></td>
+                                <td><div class = "cell__container"><p>12/04/2019</p></div></td>
+                            </tr>
+                            <tr class = "table__content">
+                                <td><div class = "cell__container"><img src = "./src/icons/Header-avatar.svg"><p>Ekaterina Tankova</p></div></td>
+                                <td><div class = "cell__container"><p>ekaterina.tankova@devias.io</p></div></td>
+                                <td><div class = "cell__container"><p>Parkersburg, West Virginia, USA</p></div></td>
+                                <td><div class = "cell__container"><p>304-428-3097</p></div></td>
+                                <td><div class = "cell__container"><p>12/04/2019</p></div></td>
+                            </tr>
+                            <tr class = "table__content">
+                                <td><div class = "cell__container"><img src = "./src/icons/Header-avatar.svg"><p>Ekaterina Tankova</p></div></td>
+                                <td><div class = "cell__container"><p>ekaterina.tankova@devias.io</p></div></td>
+                                <td><div class = "cell__container"><p>Parkersburg, West Virginia, USA</p></div></td>
+                                <td><div class = "cell__container"><p>304-428-3097</p></div></td>
+                                <td><div class = "cell__container"><p>12/04/2019</p></div></td>
+                            </tr>
+                            <tr class = "table__content">
+                                <td><div class = "cell__container"><img src = "./src/icons/Header-avatar.svg"><p>Ekaterina Tankova</p></div></td>
+                                <td><div class = "cell__container"><p>ekaterina.tankova@devias.io</p></div></td>
+                                <td><div class = "cell__container"><p>Parkersburg, West Virginia, USA</p></div></td>
+                                <td><div class = "cell__container"><p>304-428-3097</p></div></td>
+                                <td><div class = "cell__container"><p>12/04/2019</p></div></td>
+                            </tr>
+                            <tr class = "table__content">
+                                <td><div class = "cell__container"><img src = "./src/icons/Header-avatar.svg"><p>Ekaterina Tankova</p></div></td>
+                                <td><div class = "cell__container"><p>ekaterina.tankova@devias.io</p></div></td>
+                                <td><div class = "cell__container"><p>Parkersburg, West Virginia, USA</p></div></td>
+                                <td><div class = "cell__container"><p>304-428-3097</p></div></td>
+                                <td><div class = "cell__container"><p>12/04/2019</p></div></td>
                             </tr>
                         </tbody>
                         
                     </table>
 
                     <footer class = "customers__card__footer">
-                        footer
-                        <div class = "footer__rowsChanger">
-                            <p>Rows per page:</p>
+                        <div class = "footer__rows__changer">
+                            <p class = "footer__text">Rows per page:</p>
+                            <div class = "changer__dropdown">
+                                <div class="rows__ammount">
+                                    10
+                                </div>
+                                <img src = "./src/icons/dropdown.svg">
+                            </div>
                         </div>
-                        <p>1-5 of 13</p>
+                        <p class = "footer__text">1-5 of 13</p>
                         <div class = "footer__navigation">
-
+                            <button class = "card__prev"><img src = "./src/icons/card-prev.svg"></button>
+                            <button class = "card__next"><img src = "./src/icons/card-next.svg"></button>
                         </div>
                         
 
@@ -149,8 +192,10 @@
                 </div>
 
                 <footer class = "footer">
-                    <p>© Devias Io. 2021</p>
-                    <p>Material Kit Free version. For more features and components feel free to check out the <a href = "#!">pro version</a>.</p>
+                    <div class = "footer__wrapper">
+                        <p>© Devias Io. 2021</p>
+                        <p>Material Kit Free version. For more features and components feel free to check out the <a href = "#!">pro version</a>.</p>
+                    </div>
                 </footer>
             </div>
         </div>
