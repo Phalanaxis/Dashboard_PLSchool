@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "scss": "node-sass --output-style compressed -o build/css src/scss",
-    "watch:css": "node-sass --watch src/scss -o bulid/css ",
+    "watch:css": "node-sass --watch src/scss -o build/css ",
     "serve": "browser-sync start --server --files 'build/css/*.css, **/*.html'",
-    "autoprefixer": "postcss dist/css/*.css --use autoprefixer --map=false -b 'last 2 versions' -d dist/css",
+    "autoprefixer": "postcss build/css/*.css --use autoprefixer --map=false -b 'last 2 versions' -d build/css",
     "start": "run-p serve watch:css"
   },
   "author": "",

@@ -1,0 +1,1 @@
+{"version":3,"sources":["reset.css"],"names":[],"mappings":"AAAA,EAAE,SAAS,CAAC,SAAS,CAAC,QAAQ,CAAC,QAAQ,CAAC,qBAAqB","file":"reset.css","sourcesContent":["*{outline:0;padding:0;margin:0;border:0;box-sizing:border-box}\n"]}
